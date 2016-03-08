@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:id="@+id/LinearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <EditText
+            android:singleLine="true"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:id="@+id/uriText"
+            android:inputType="textUri"
+            android:hint="http://your_url"
+            android:focusable="true" />
+
+        <TextView
+            android:scrollbars = "vertical"
+            android:id="@+id/codeText"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.20"
+            android:singleLine="false">
+        </TextView>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:layout_alignParentTop="false"
+        android:layout_centerInParent="true"
+        android:layout_alignParentLeft="false"
+        android:id="@+id/progressBar" />
+
+</RelativeLayout>
